@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.mycompany.app.AppTest" time="0.02" tests="7" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.mycompany.app.AppTest" time="0.018" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="TR"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/temurin-21.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/dataozk/Desktop/BİL481/hw1try/myDemoApp/target/surefire/surefirebooter-20240312182606796_3.jar /Users/dataozk/Desktop/BİL481/hw1try/myDemoApp/target/surefire 2024-03-12T18-26-06_753-jvmRun1 surefire-20240312182606796_1tmp surefire_0-20240312182606796_2tmp"/>
+    <property name="sun.java.command" value="/Users/dataozk/Desktop/BİL481/hw1try/myDemoApp/target/surefire/surefirebooter-20240312183900563_3.jar /Users/dataozk/Desktop/BİL481/hw1try/myDemoApp/target/surefire 2024-03-12T18-39-00_532-jvmRun1 surefire-20240312183900563_1tmp surefire_0-20240312183900563_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/dataozk/Desktop/BİL481/hw1try/myDemoApp/target/test-classes:/Users/dataozk/Desktop/BİL481/hw1try/myDemoApp/target/classes:/Users/dataozk/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.1/junit-jupiter-api-5.8.1.jar:/Users/dataozk/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/dataozk/.m2/repository/org/junit/platform/junit-platform-commons/1.8.1/junit-platform-commons-1.8.1.jar:/Users/dataozk/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/dataozk/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.1/junit-jupiter-engine-5.8.1.jar:/Users/dataozk/.m2/repository/org/junit/platform/junit-platform-engine/1.8.1/junit-platform-engine-1.8.1.jar:/Users/dataozk/.m2/repository/com/sparkjava/spark-core/2.5.4/spark-core-2.5.4.jar:/Users/dataozk/.m2/repository/org/slf4j/slf4j-api/1.7.13/slf4j-api-1.7.13.jar:/Users/dataozk/.m2/repository/org/eclipse/jetty/jetty-server/9.3.6.v20151106/jetty-server-9.3.6.v20151106.jar:/Users/dataozk/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/dataozk/.m2/repository/org/eclipse/jetty/jetty-http/9.3.6.v20151106/jetty-http-9.3.6.v20151106.jar:/Users/dataozk/.m2/repository/org/eclipse/jetty/jetty-util/9.3.6.v20151106/jetty-util-9.3.6.v20151106.jar:/Users/dataozk/.m2/repository/org/eclipse/jetty/jetty-io/9.3.6.v20151106/jetty-io-9.3.6.v20151106.jar:/Users/dataozk/.m2/repository/org/eclipse/jetty/jetty-webapp/9.3.6.v20151106/jetty-webapp-9.3.6.v20151106.jar:/Users/dataozk/.m2/repository/org/eclipse/jetty/jetty-xml/9.3.6.v20151106/jetty-xml-9.3.6.v20151106.jar:/Users/dataozk/.m2/repository/org/eclipse/jetty/jetty-servlet/9.3.6.v20151106/jetty-servlet-9.3.6.v20151106.jar:/Users/dataozk/.m2/repository/org/eclipse/jetty/jetty-security/9.3.6.v20151106/jetty-security-9.3.6.v20151106.jar:/Users/dataozk/.m2/repository/org/eclipse/jetty/websocket/websocket-server/9.3.6.v20151106/websocket-server-9.3.6.v20151106.jar:/Users/dataozk/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.3.6.v20151106/websocket-common-9.3.6.v20151106.jar:/Users/dataozk/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.3.6.v20151106/websocket-client-9.3.6.v20151106.jar:/Users/dataozk/.m2/repository/org/eclipse/jetty/websocket/websocket-servlet/9.3.6.v20151106/websocket-servlet-9.3.6.v20151106.jar:/Users/dataozk/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.3.6.v20151106/websocket-api-9.3.6.v20151106.jar:/Users/dataozk/.m2/repository/com/sparkjava/spark-template-mustache/2.3/spark-template-mustache-2.3.jar:/Users/dataozk/.m2/repository/com/github/spullara/mustache/java/compiler/0.9.0/compiler-0.9.0.jar:/Users/dataozk/.m2/repository/org/apache/logging/log4j/log4j-core/2.10.0/log4j-core-2.10.0.jar:/Users/dataozk/.m2/repository/org/apache/logging/log4j/log4j-api/2.10.0/log4j-api-2.10.0.jar:/Users/dataozk/.m2/repository/org/apache/logging/log4j/log4j-slf4j-impl/2.10.0/log4j-slf4j-impl-2.10.0.jar:"/>
@@ -29,7 +29,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/dataozk/Desktop/BİL481/hw1try/myDemoApp/target/surefire/surefirebooter-20240312182606796_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/dataozk/Desktop/BİL481/hw1try/myDemoApp/target/surefire/surefirebooter-20240312183900563_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="21.0.2+13-LTS"/>
@@ -58,11 +58,11 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testReplaceCharacters_OutOfBoundsIndex" classname="com.mycompany.app.AppTest" time="0.008"/>
+  <testcase name="testReplaceCharacters_OutOfBoundsIndex" classname="com.mycompany.app.AppTest" time="0.007"/>
   <testcase name="testReplaceCharacters_EmptyString" classname="com.mycompany.app.AppTest" time="0.002"/>
-  <testcase name="testReplaceCharacters_SingleReplacement" classname="com.mycompany.app.AppTest" time="0.0"/>
+  <testcase name="testReplaceCharacters_SingleReplacement" classname="com.mycompany.app.AppTest" time="0.001"/>
   <testcase name="testReplaceCharacters_MultipleReplacements" classname="com.mycompany.app.AppTest" time="0.001"/>
   <testcase name="testReplaceCharacters_LargeStrings" classname="com.mycompany.app.AppTest" time="0.0"/>
   <testcase name="testReplaceCharacters_SameString" classname="com.mycompany.app.AppTest" time="0.0"/>
-  <testcase name="testReplaceCharacters_UnevenArrays" classname="com.mycompany.app.AppTest" time="0.0"/>
+  <testcase name="testReplaceCharacters_UnevenArrays" classname="com.mycompany.app.AppTest" time="0.001"/>
 </testsuite>
