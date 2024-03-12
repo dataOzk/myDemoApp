@@ -21,4 +21,3 @@ My Demo App is a Java application that provides functionality to replace charact
 
 [![Build Status](https://app.travis-ci.com/dataOzk/myDemoApp.svg?token=3grjW2phX7pqFNkLprhN&branch=master)](https://app.travis-ci.com/dataOzk/myDemoApp)
 
-https://tranquil-brook-82168-c731def21a35.herokuapp.com/
