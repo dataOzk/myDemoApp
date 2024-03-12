@@ -1,59 +1,47 @@
 package com.mycompany.app;
 
 import static spark.Spark.*;
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
+import spark.ModelAndView;
+import spark.template.mustache.MustacheTemplateEngine;
+
 public class App {
 
-    public static boolean search(ArrayList<Integer> array, int e) {
-        System.out.println("inside search");
-        if (array == null) return false;
-
-        for (int elt : array) {
-            if (elt == e) return true;
-        }
-        return false;
-    }
 
     public static void main(String[] args) {
         port(getHerokuAssignedPort());
 
-        get("/", (req, res) -> {
-            return "Hello, World";
-        });
+        get("/", (req, res) -> "Hello, World");
 
         post("/compute", (req, res) -> {
-            String input1 = req.queryParams("input1");
-            String input2 = req.queryParams("input2");
+            String string1 = req.queryParams("string1");
+            String string2 = req.queryParams("string2");
+            String array1Str = req.queryParams("array1");
+            String array2Str = req.queryParams("array2");
+            // Parse comma-separated strings into integer arrays
+            int[] array1 = Arrays.stream(array1Str.split(","))
+                                 .mapToInt(Integer::parseInt)
+                                 .toArray();
+            int[] array2 = Arrays.stream(array2Str.split(","))
+                                 .mapToInt(Integer::parseInt)
+                                 .toArray();
 
-            String[] input1Array = input1.split(",");
-            String[] input2Array = input2.split(",");
 
-            int[] array1 = new int[input1Array.length];
-            int[] array2 = new int[input2Array.length];
+            String result = App.replaceCharacters(string1, string2, array1, array2);
 
-            for (int i = 0; i < input1Array.length; i++) {
-                array1[i] = Integer.parseInt(input1Array[i].trim());
-                array2[i] = Integer.parseInt(input2Array[i].trim());
-            }
-
-            String str1 = req.queryParams("str1");
-            String str2 = req.queryParams("str2");
-
-            String result = replaceCharacters(str1, str2, array1, array2);
-
-            Map<String, String> map = new HashMap<>();
+            Map map = new HashMap();
             map.put("result", result);
-            return map;
-        });
+            return new ModelAndView(map, "compute.mustache");
+        }, new MustacheTemplateEngine());
 
-        get("/compute", (req, res) -> {
-            Map<String, String> map = new HashMap<>();
+        get("/compute", (rq, rs) -> {
+            Map map = new HashMap();
             map.put("result", "not computed yet!");
-            return map;
-        });
+            return new ModelAndView(map,"compute.mustache");
+        }, new MustacheTemplateEngine());
     }
 
     public static String replaceCharacters(String str1, String str2, int[] array1, int[] array2) {
