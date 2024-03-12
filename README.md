@@ -18,3 +18,5 @@ My Demo App is a Java application that provides functionality to replace charact
 
    String result = App.replaceCharacters(str1, str2, array1, array2);
    System.out.println("Result: " + result);
+
+[![Build Status](https://app.travis-ci.com/dataOzk/myDemoApp.svg?token=3grjW2phX7pqFNkLprhN&branch=master)](https://app.travis-ci.com/dataOzk/myDemoApp)
